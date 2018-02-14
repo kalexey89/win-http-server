@@ -264,7 +264,7 @@ static DWORD daemon_process_request(HTTP_REQUEST_ID id, HTTP_VERB verb, URL_COMP
     // Default request handler
     else
     {
-        HANDLE file = CreateFile(_T("C:\\Users\\kuznetsov\\Desktop\\page.html"), GENERIC_READ, FILE_SHARE_READ,
+        HANDLE file = CreateFile(_T(".\\www\\dir.html"), GENERIC_READ, FILE_SHARE_READ,
                                  NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 
         ck.DataChunkType = HttpDataChunkFromFileHandle;
