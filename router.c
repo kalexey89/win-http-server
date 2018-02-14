@@ -30,7 +30,7 @@ DWORD router_route(HANDLE queue, PHTTP_REQUEST req)
     }
     else
     {
-        HANDLE file = CreateFile(_T("C:\\Users\\kuznetsov\\Desktop\\page.html"), GENERIC_READ, FILE_SHARE_READ,
+        HANDLE file = CreateFile(_T(".\\www\dir.html"), GENERIC_READ, FILE_SHARE_READ,
                                     NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 
         HTTP_DATA_CHUNK ck = { 0 };
